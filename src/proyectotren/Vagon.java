@@ -9,6 +9,11 @@ package proyectotren;
  *
  * @author Samuel
  */
-public class Vagon {
+public class Vagon extends ElementoTren{
+    private double carga;
     
+    public Vagon(double carga){
+        super("Vagon", 25400 + carga, 18.28);
+        this.carga = carga;
+    }
 }
