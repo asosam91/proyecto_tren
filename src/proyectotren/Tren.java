@@ -60,23 +60,38 @@ public class Tren {
     */
     public Tren() 
     {
-
+        this.elementos = new String[numElementos];
     }
 
     // Métodos
     public void agregarLocomotora(Locomotora locomotora)
     {
-
+        if(this.elemento.length() < numElementos)
+        {
+            this.elemento[tamActual] = locomotora;
+            this.capacidadCarga += locomotora.capacidadCarga;
+            ajustaDimensiones(locomotora);
+        }
     }
 
     public void agregarVagones(Vagon vagon) 
     {
+        if(this.elemento.length() < numElementos)
+        {
+            if(this.capacidadCarga > this.peso) {
+                agregarLocomotora(new Locomotora());
+            }
 
+            this.elemento[tamActual] = vagon;
+            ajustaDimensiones(vagon);
+        }
     }
 
     private void ajustaDimensiones(ElementoTren elemento) 
     {
-
+            this.longitud+=elemento.getLongitud();
+            this.peso+=elemento.getPeso();
+            this.tamActual++;
     }
 
     public String toString() 
