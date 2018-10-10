@@ -19,32 +19,40 @@ public class Tren {
 
     public double getCapacidadCarga() 
     {
-
+        return this.capacidadCarga;
     }
 
-    public void getInfo() 
+    /**
+    *  Obtiene información general del tren
+    */
+    public String getInfo() 
     {
-
+        String info = "Número de elementos:\t" + this.numElementos +
+            "Peso:\t\t\t" + this.peso + 
+            "Longitud:\t\t" + this.longitud +
+            "Capacidad de carga:\t" + this.capacidadCarga;
+        return info;
     }
 
+    // Getters
     public double getLongitud() 
     {
-
+        return this.longitud;
     }
 
     public int getNumElementos() 
     {
-
+        return this.numElementos;
     }
 
     public double getPeso() 
     {
-
+        return this.peso;
     }
 
     public int getTamActual() 
     {
-
+        return this.tamActual;
     }
 
     /**
@@ -55,6 +63,7 @@ public class Tren {
 
     }
 
+    // Métodos
     public void agregarLocomotora(Locomotora locomotora)
     {
 
@@ -74,6 +83,4 @@ public class Tren {
     {
 
     }
-
-
 }
