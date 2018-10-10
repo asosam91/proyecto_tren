@@ -10,10 +10,11 @@ package proyectotren;
  * @author Samuel
  */
 public class Locomotora extends ElementoTren{
-    private double capacidadCarga = 200000;
+    private double capacidadCarga;
     
     public Locomotora(){
         super("Locomotora", 92600, 20.17);
+        this.capacidadCarga = 200000;
     }
     
     public double getCapacidadCarga(){
