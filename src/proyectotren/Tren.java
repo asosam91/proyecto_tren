@@ -76,7 +76,9 @@ public class Tren {
 
     private void ajustaDimensiones(ElementoTren elemento) 
     {
-
+            this.longitud+=elemento.getLongitud();
+            this.peso+=elemento.getPeso();
+            this.tamActual++;
     }
 
     public String toString() 
