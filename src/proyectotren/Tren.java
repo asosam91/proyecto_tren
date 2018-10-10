@@ -19,7 +19,7 @@ public class Tren {
 
     public double getCapacidadCarga() 
     {
-
+        return capacidadCarga;
     }
 
     public void getInfo() 
@@ -29,22 +29,22 @@ public class Tren {
 
     public double getLongitud() 
     {
-
+        return longitud;
     }
 
     public int getNumElementos() 
     {
-
+        return numElementos;
     }
 
     public double getPeso() 
     {
-
+        return peso;
     }
 
-    public int getTamActual() 
+    public double getTamActual() 
     {
-
+        return 0.0;
     }
 
     /**
@@ -72,7 +72,8 @@ public class Tren {
 
     public String toString() 
     {
-
+        String c="";
+        return c;
     }
 
 
